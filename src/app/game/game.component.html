@@ -1,0 +1,11 @@
+<p>game works!</p>
+
+<h1>Player name: {{ player.name }}</h1>
+<div><span>Games won: </span>{{ player.gamesWon }}</div>
+
+<h2>{{ player.name | uppercase }} Details</h2>
+
+<div>
+  <label for="name">Enter player name: </label>
+  <input id="name" [(ngModel)]="player.name" placeholder="name" />
+</div>
